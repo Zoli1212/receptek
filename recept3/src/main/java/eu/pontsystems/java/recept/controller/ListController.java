@@ -13,7 +13,7 @@ public class ListController extends BaseController {
 	@Autowired
 	private ReceptService rs;
 	
-	@GetMapping("list")
+	@GetMapping("/")
 	public String viewAllRecipes(Model model) {
 		if (authSzukseges(model, "list")) {
 			return "login";
